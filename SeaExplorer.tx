@@ -1,0 +1,38 @@
+Program:
+    'Start swimming'
+        actions*=Action
+    'That is enough exploring'
+;
+
+Action:
+    Swim | Dive | Discovery
+;
+
+Swim:
+    'Swim' distance=Distance 'yard(s)'
+;
+
+Distance:
+    INT
+;
+
+Dive:
+    'Dive down' depth=Depth 'yard(s)'
+;
+
+Depth:
+    INT
+;
+
+Discovery:
+    'I see something' seaCreatureDistance=SeaCreatureDistance 'yard(s) away'
+;
+
+SeaCreatureDistance:
+    INT
+;
+
+Comment:
+    /\/\/.*$/
+;
+
